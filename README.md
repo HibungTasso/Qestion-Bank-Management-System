@@ -1,2 +1,2 @@
-# Qestion-Bank-Management-System
+# Question-Bank-Management-System
 Group project
