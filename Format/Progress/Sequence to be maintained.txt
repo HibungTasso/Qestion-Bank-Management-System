@@ -1,0 +1,11 @@
+The report to be organised in folowing sequence:
+1. Cove page
+2. Certificate page
+3. Abstract
+4. List of contents
+5. List of Figures
+6. Lst of Tables
+7. Report form Chapter 1 though Chapter 7
+8. Bibliography and References.
+
+Note: That The page Nnumber should be mentioned for the pages containing report only (i.e. Chapter 1 through 7).
