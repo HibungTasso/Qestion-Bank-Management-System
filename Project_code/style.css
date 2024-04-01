@@ -26,8 +26,9 @@
     width: 768px;
     max-width: 100%;
     min-height: 480px;
+    margin-top: 150px;
+    margin-right: 600px;
 }
-
 .container1 p{
     font-size: 14px;
     line-height: 20px;
@@ -216,7 +217,8 @@ body {
     justify-content: center;
     align-items: center;
     /* height: 100vh; */
-    background-image: url("background.jpeg");
+    background-image: url("nis_BG.jpg");
+    background-color: #7469B6;
     background-size:cover;
     background-repeat: no-repeat;
 }
