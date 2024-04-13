@@ -1,7 +1,6 @@
 const container = document.getElementById('container1');
 const registerBtn = document.getElementById('register');
 const loginBtn = document.getElementById('login');
-
 registerBtn.addEventListener('click', () => {
     container.classList.add("active");
 });
@@ -9,36 +8,22 @@ registerBtn.addEventListener('click', () => {
 loginBtn.addEventListener('click', () => {
     container.classList.remove("active");
 });
+document.getElementById("loginForm").addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent form submission
 
-function populateOptions() {
-    var categorySelect = document.getElementById("categorySelect");
-    var itemSelect = document.getElementById("itemSelect");
+    // Get input values
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    // var confirmPassword = document.getElementById('confirmPassword').value;
 
-    itemSelect.innerHTML = ""; // Clear existing options
 
-    if (categorySelect.value === "Python") {
-        var Python = ["Basics", "Loops", "Data types"];
-        Python.forEach(function (Python) {
-            var option = document.createElement("option");
-            option.text = Python;
-            option.value = Python.toLowerCase();
-            itemSelect.add(option);
-        });
-    } else if (categorySelect.value === "Java") {
-        var Java = ["Basics", "Operators", "OOPS"];
-        Java.forEach(function (Java) {
-            var option = document.createElement("option");
-            option.text = Java;
-            option.value = Java.toLowerCase();
-            itemSelect.add(option);
-        });
+    // Check if username and password match predefined values
+    if (username === 'admin@123' && password === 'admin123') {
+        // If matched, store the login status in local storage
+        localStorage.setItem('loggedIn', 'true');
+        // alert('Login successful');
+        window.location.href = 'index2.html'; // Redirect to dashboard page
+    } else {
+        alert('Invalid username or password');
     }
-}
-
-document.getElementById("myForm").addEventListener("submit", function (event) {
-    event.preventDefault();
-    var category = document.getElementById("categorySelect").value;
-    var item = document.getElementById("itemSelect").value;
-    alert("Subject: " + category + "\ntopic: " + item);
-    // You can further process the selected values here
 });
