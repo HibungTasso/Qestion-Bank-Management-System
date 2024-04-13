@@ -35,7 +35,8 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
     event.preventDefault();
     var category = document.getElementById("categorySelect").value;
     var item = document.getElementById("itemSelect").value;
-    alert("Subject: " + category + "\ntopic: " + item);
+    // alert("Subject: " + category + "\ntopic: " + item);
+    window.location.href = 'index3.html'; // Redirect to dashboard page
     // You can further process the selected values here
 });
 function myFunction() {
